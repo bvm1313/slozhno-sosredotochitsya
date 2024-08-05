@@ -286,6 +286,10 @@ button:focus {
     margin: 30px 20px 0 0;
   }
 
+  .main__card {
+    gap: 20px;
+  }
+
   .main__list_focus {
     grid-template-columns: 1fr;
   }
@@ -337,7 +341,6 @@ button:focus {
 
   .main__card {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .main__title_focus {
