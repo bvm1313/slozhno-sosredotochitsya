@@ -337,6 +337,7 @@ button:focus {
 
   .main__card {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .main__title_focus {
