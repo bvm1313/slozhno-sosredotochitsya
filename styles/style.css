@@ -177,6 +177,7 @@ button:focus {
 .main__card {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content 1fr;
   gap: 10px;
 }
 
@@ -188,7 +189,22 @@ button:focus {
   text-align: left;
 }
 
+.main__card_list {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 1fr;
+}
+
+.main__card_list_title {
+  justify-self: start;
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
 .main__list {
+  grid-row: 2 / 3;
   display: grid;
   gap: 20px;
 }
