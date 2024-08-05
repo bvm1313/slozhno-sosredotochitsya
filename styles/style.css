@@ -41,7 +41,7 @@ button:focus {
 
 .page {
   color: var(--main-text);
-  font-family: var(--base-font, sans-serif);
+  font-family: var(--base-font, monospace);
   background-color: var(--bg-color);
   background-image: var(--background-image);
   background-position: center;
@@ -57,6 +57,7 @@ button:focus {
   justify-items: center;
   align-items: start;
   height: 100vh;
+  min-height: 668px;
 }
 
 .header__theme-menu {
@@ -78,7 +79,7 @@ button:focus {
   justify-self: start;
   align-self: center;
   color: var(--title-color);
-  font-family: var(--base-font), serif;
+  font-family: var(--base-font), monospace;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 129.53px;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -90,11 +91,11 @@ button:focus {
   justify-self: end;
   align-self: start;
   color: var(--decor-text);
-  font-family: var(--base-font), serif;
+  font-family: var(--base-font), monospace;
   font-weight: 700;
   font-size: var(--middle);
   line-height: 23.4px;
-  background-color: var(--backdrop-color); 
+  background-color: var(--backdrop-color);
 }
 
 .main__advice {
@@ -144,12 +145,13 @@ button:focus {
   border: none;
   padding: 0px 13px 0px 13px;
   color: var(--additional-color);
-  font-family: var(--base-font);
+  font-family: var(--base-font), monospace;
   font-weight: 400;
   font-size: var(--middle);
   line-height: var(--middle);
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -193,25 +195,25 @@ button:focus {
 
 .main__card_text {
   margin-top: 10px;
-  font-family: IBM Plex Mono;
+  font-family: var(--base-font), monospace;
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
   text-align: left;
 }
 
-.main__mid {
+.main__focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content 1fr;
   gap: 20px;
 }
 
-.main__title_mid {
+.main__title_focus {
   grid-row: 1 / 2;
 }
 
-.main__list_mid {
+.main__list_focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column: 1 / 4 ;
@@ -238,11 +240,11 @@ button:focus {
   object-fit: cover;
 }
 
-.main__images_cell_span-col-2 {
+.main__images_cell_span-col {
   grid-column: span 2;
 }
 
-.main__images_cell_span-row-2 {
+.main__images_cell_span-row {
   grid-row: span 2;
 }
 
@@ -252,6 +254,7 @@ button:focus {
   place-items: center;
   align-items: center;
   height: 100vh;
+  min-height: 668px;
 }
 
 .footer__title {
@@ -279,7 +282,7 @@ button:focus {
     margin: 30px 20px 0 0;
   }
 
-  .main__list_mid {
+  .main__list_focus {
     grid-template-columns: 1fr;
   }
 }
@@ -332,7 +335,7 @@ button:focus {
     grid-template-columns: 1fr;
   }
 
-  .main__title_mid {
+  .main__title_focus {
     grid-column: span 3;
   }
 
