@@ -6,7 +6,7 @@ button:focus {
 
 .main_link_shadow {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--backdrop-color);
 }
 
 .main_link_shadow:hover {
@@ -174,7 +174,7 @@ button:focus {
   margin: 60px 20px;
 }
 
-.main__card {
+.content__section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
@@ -207,7 +207,6 @@ button:focus {
 }
 
 .main__focus {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content 1fr;
   gap: 20px;
@@ -286,7 +285,7 @@ button:focus {
     margin: 30px 20px 0 0;
   }
 
-  .main__card {
+  .content__section {
     gap: 20px;
   }
 
@@ -339,7 +338,7 @@ button:focus {
     margin: 40px 10px;
   }
 
-  .main__card {
+  .content__section {
     grid-template-columns: 1fr;
   }
 
